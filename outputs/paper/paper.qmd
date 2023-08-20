@@ -1,19 +1,16 @@
 ---
-title: "Nonlinear Temperature Effects"
+title: "Nonlinear Temperature Effects on Forestry Harvest Volume in Quebec, Canada: Implications for Log & Bolts, Pulpwood, and Firewood Production under Climate Change"
 author:
   - Jinqi Guo
   - Young Joseph Chung
   - Steven
 date: today
 date-format: "MMM D, YYYY"
-author: "Jinqi Guo", "Young Joseph Chung", "Steven"
-date: today
-date-format: "MMDD, YYYY"
 format:
   pdf:
     documentclass: article
     geometry: margin = 1in
-    abstract: placeholder
+    abstract: An overview of the study's objectives, methods, key findings, and implications, condensed into a brief summary.
     toc: true
     number-sections: true
     colorlinks: true
@@ -92,11 +89,30 @@ my_kable_styling <- function(dat, caption) {
 ```
 
 # Introduction
+## Background on Quebec's forestry industry and its economic importance.
+## Brief mention of climate change impacts on forestry globally.
+## Objective and scope of the current study.
+
+# Data and Methods:
+## Data Sources:
+## Methodological Approach:
 
 # Results
+## Temperature Thresholds:
+## Projected Harvest Volume Changes:
 
 # Discussion
+## Comparison with Crop Findings:
+## Implications for Quebec's Forestry Industry:
+## Potential Adaptation Strategies:
 
-# Methods
+# Conclusion
+## Summary of key findings.
+## Emphasis on the importance of proactive adaptation and policy measures.
+## Suggestions for further research, possibly expanding the scope to include other climate variables or regions.
+
+# Acknowledgments
 
 # References
+
+# Appendices
