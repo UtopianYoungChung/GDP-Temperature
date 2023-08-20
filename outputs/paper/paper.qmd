@@ -6,6 +6,9 @@ author:
   - Steven
 date: today
 date-format: "MMM D, YYYY"
+author: "Jinqi Guo", "Young Joseph Chung", "Steven"
+date: today
+date-format: "MMDD, YYYY"
 format:
   pdf:
     documentclass: article
