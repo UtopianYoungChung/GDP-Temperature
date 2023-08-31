@@ -1,23 +1,23 @@
-d---
-title: "Nonlinear Temperature Effects on Forestry Harvest Volume in Quebec, Canada: Implications for Log & Bolts, Pulpwood, and Firewood Production under Climate Change"
-author:
-  - Jinqi Guo
-  - Young Joseph Chung
-  - Steven
-date: today
-date-format: "MMM D, YYYY"
-format:
-  pdf:
-    documentclass: article
-    geometry: margin = 1in
-    abstract: An overview of the study's objectives, methods, key findings, and implications, condensed into a brief summary.
-    toc: true
-    number-sections: true
-    colorlinks: true
-    lof: true
-    lot: true
-thanks: " Code and data are avaiable at: https://github.com/UtopianYoungChung/GDP-Temperature.git"
-bibliography: bibliography.bib
+---
+title: "Nonlinear Temperature Effects on Forestry Harvest Volume in Quebec, Canada: Implications for Log & Bolts, Pulpwood, and Firewood Production under Climate Change" 
+author: 
+  - Jinqi Guo 
+  - Young Joseph Chung 
+  - Steven 
+date: today 
+date-format: "MMM D, YYYY" 
+format: 
+  pdf: 
+    documentclass: article 
+    geometry: margin = 1in 
+    abstract: An overview of the study's objectives, methods, key findings, and implications, condensed into a brief summary. 
+    toc: true 
+    number-sections: true 
+    colorlinks: true 
+    lof: true 
+    lot: true 
+    thanks: " Code and data are avaiable at: https://github.com/UtopianYoungChung/GDP-Temperature.git" 
+bibliography: bibliography.bib 
 ---
 
 ```{r}
@@ -89,25 +89,37 @@ my_kable_styling <- function(dat, caption) {
 ```
 
 # Introduction
+
 ## Background on Quebec's forestry industry and its economic importance.
+
 ## Brief mention of climate change impacts on forestry globally.
+
 ## Objective and scope of the current study.
 
 # Data and Methods:
+
 ## Data Sources:
+
 ## Methodological Approach:
 
 # Results
+
 ## Temperature Thresholds:
+
 ## Projected Harvest Volume Changes:
 
 # Discussion
+
 ## Comparison with Crop Findings:
+
 ## Implications for Quebec's Forestry Industry:
+
 ## Potential Adaptation Strategies:
 
 # Conclusion
+
 ## Summary of key findings.
+
 ## Suggestions for further research, possibly expanding the scope to include other climate variables or regions.
 
 # Acknowledgments
