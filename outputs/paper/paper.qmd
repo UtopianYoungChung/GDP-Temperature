@@ -108,7 +108,6 @@ my_kable_styling <- function(dat, caption) {
 
 # Conclusion
 ## Summary of key findings.
-## Emphasis on the importance of proactive adaptation and policy measures.
 ## Suggestions for further research, possibly expanding the scope to include other climate variables or regions.
 
 # Acknowledgments
