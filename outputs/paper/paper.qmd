@@ -1,4 +1,4 @@
----
+d---
 title: "Nonlinear Temperature Effects on Forestry Harvest Volume in Quebec, Canada: Implications for Log & Bolts, Pulpwood, and Firewood Production under Climate Change"
 author:
   - Jinqi Guo
