@@ -13,3 +13,7 @@ This paper estimates the link between weather and yields for the three categorie
 
 
 ### Paper
+
+-   [/outputs/paper/](https://github.com/UtopianYoungChung/GDP-Temperature/tree/main/outputs/paper) contains 'bib' extension file (bibliography), pdf (Report paper), qmd (Main Quarto)
+
+-   [/scripts/](https://github.com/UtopianYoungChung/GDP-Temperature/tree/main/scripts) contains 'R' extension files (00-download_data, 00-simulation)
