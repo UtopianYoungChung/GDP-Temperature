@@ -1,0 +1,98 @@
+---
+title: "Nonlinear Temperature Effects Indicate Severe Damages to Quebec Forestry Harvest Volume Under Climate Change" 
+author: 
+  - Jinqi Guo 
+  - Young Joseph Chung 
+  - Steven 
+date: today 
+date-format: "MMM D, YYYY" 
+subtitle: "Supporting Information Appendix"
+format: 
+  pdf: 
+    documentclass: article 
+    geometry: margin = 1in 
+    toc: true 
+    number-sections: true 
+    colorlinks: true 
+    lof: true 
+    lot: true 
+    thanks: " Code and data are avaiable at: https://github.com/UtopianYoungChung/GDP-Temperature.git" 
+bibliography: bibliography.bib 
+---
+
+# Data Appendix
+
+## Dependent Variable
+
+Harvest volume for Logs and bolts, Pulpwood, and FuelWood for the years 1990-2019 are reported by the Forestry Department.
+
+```{r setup, include= FALSE}
+library(tidyverse)
+library(palmerpenguins)
+library(knitr)
+library(dplyr)
+library(ggplot2)
+library(psych)
+
+```
+
+```{r}
+#| messages: false
+#| echo: false
+#| warning: false
+#| label: tbl-1
+#| tbl-cap: Descritpive Statistics Harvest Volume
+
+### Read and merge datasets ###
+gdp <- read_csv(here::here("inputs/data/GDP/Forestry/gdp.csv"), show_col_types = FALSE)
+
+### renaming Fuelwood*b to FuelWood###
+
+gdp <- gdp %>% 
+  mutate(Category = case_when(
+    Category == "Fuelwood*b and firewood*c" ~ "FuelWood (Volume/hec)",
+    Category == "Logs and bolts" ~ "Logs (Volume/hec)",
+    Category == "Pulpwood" ~ "PulpWood (Volume/hec)",
+    TRUE ~ Category
+  ))
+
+# Constants for conversion
+total_hectares = 198990
+
+# Calculate summary statistics for each category
+summary_gdp_stats <- gdp %>%
+  select(Category, `Volume (cubic metres) (En) Nulls`) %>%
+  group_by(Category) %>%
+  summarise(
+    #Total_Volume = sum(`Volume (cubic metres) (En) Nulls`, na.rm = TRUE),
+    Mean = mean(`Volume (cubic metres) (En) Nulls`, na.rm = TRUE)/total_hectares,
+    Minimum = min(`Volume (cubic metres) (En) Nulls`, na.rm = TRUE)/total_hectares,
+    Maximum = max(`Volume (cubic metres) (En) Nulls`, na.rm = TRUE)/total_hectares,
+    Std = sd(`Volume (cubic metres) (En) Nulls`, na.rm = TRUE)/total_hectares
+  )
+summary_gdp_stats %>% 
+  kable()
+
+```
+
+# Regression Models
+
+# Regression Results and Significance Levels
+
+# Out-ofSample Prediction Accuracy
+
+# Nonlinearities and Climate Change Impacts
+
+# Cross-section versus Time Series
+
+# Temporal Subsets
+
+# Temperature - Precipitation Interaction
+
+# Growing Season and Time Separability
+
+# Year Fixed Effects
+
+# Linear Within-Day Temperature Interporation
+
+# Unifom Climate Change Scenarios
